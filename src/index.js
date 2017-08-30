@@ -1,10 +1,9 @@
-
 import Vue from 'vue'
 import Vonic from 'vonic'
 
-
-import Index from './components/Index.vue'
-import About from './components/About.vue'
+// Page Components
+import Index from './componentes/Index.vue'
+import About from './componentes/About.vue'
 
 // Routes
 const routes = [

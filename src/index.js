@@ -1,21 +1,17 @@
-"use strict"
+
 import Vue from 'vue'
-import VueRouter from 'vue-router'
 import Vonic from 'vonic'
-import routes from './router.config.js'
-import App from './App.vue'
 
-Vue.use(VueRouter)
-Vue.use(Vonic)
 
-var router = new VueRouter({
-    routes
-})
+import Index from './components/Index.vue'
+import About from './components/About.vue'
 
-new Vue({
-    el : '#app',
-    router,
-    render : function(h){
-        return h(App)
-    }
+// Routes
+const routes = [
+  { path: '/', component: Index },
+  { path: '/about', component: About }
+]
+
+Vue.use(Vonic.app, {
+  routes: routes
 })

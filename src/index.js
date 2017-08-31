@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vonic from 'vonic'
+import VueRuter from 'vue-router'
 
 // Page Components
 import Index from './componentes/Index.vue'
